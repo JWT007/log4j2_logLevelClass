@@ -43,8 +43,9 @@ public class Log4jLevelTest {
       System.out.println();
       System.out.println(" ==================================================================================");
       System.out.println();
-      System.out.println("Changing logger level by Class<?> to: DEBUG");
-      Configurator.setLevel(clazz, Level.DEBUG);
+      System.out.println(">> Configurator.setLevel(Inner.class, Level.DEBUG");
+      System.out.println();
+      Configurator.setLevel(InnerClass.class, Level.DEBUG);
 
       System.out.println("Logger name               :: " + loggerForClass.getName());
       System.out.println("Logger level              :: " + loggerForClass.getLevel());
